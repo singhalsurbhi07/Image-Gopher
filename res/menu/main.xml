@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.imagegopher.MainActivity" >
+
+   
+    
+    <item
+        android:id="@+id/miAdvSettings"
+        android:icon="@drawable/ic_advsettings"
+        android:showAsAction="always"
+        android:onClick="onSettingsClicked"
+        android:title="Advance Settings">
+    </item>
+
+</menu>

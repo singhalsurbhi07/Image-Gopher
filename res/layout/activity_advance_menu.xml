@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/type" />
+
+    <Spinner
+        android:id="@+id/spType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvType"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/tvType" />
+
+    <TextView
+        android:id="@+id/tvSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvType"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/size" />
+     <Spinner
+        android:id="@+id/spSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvSize"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/tvSize"/>
+
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSize"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/color" />
+    
+     <Spinner
+        android:id="@+id/spColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvColor"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/tvColor" />
+
+    <TextView
+        android:id="@+id/tvUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvColor"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/url" />
+    
+     <EditText
+        android:id="@+id/etUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvUrl"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/tvUrl" />
+
+     <Button
+         android:id="@+id/btnSearch"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/etUrl"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="44dp"
+         android:text="Search" />
+   
+</RelativeLayout>
