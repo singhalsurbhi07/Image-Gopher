@@ -32,5 +32,5 @@ Site (espn.com)
 
 11.Advanced: Improve the user interface and experiment with image assets and/or styling and coloring
 
-(https://github.com/singhalsurbhi07/Image-Gopher/blob/master/ImageGopherRecording1.gif)
+![alt tag](https://github.com/singhalsurbhi07/Image-Gopher/blob/master/ImageGopherRecording1.gif)
 
