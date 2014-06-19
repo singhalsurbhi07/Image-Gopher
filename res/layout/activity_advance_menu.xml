@@ -13,14 +13,23 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="16dp"
         android:text="@string/type" />
-
-    <Spinner
-        android:id="@+id/spType"
+     <TextView
+        android:id="@+id/tvSelectedType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvType"
         android:layout_alignBottom="@+id/tvType"
         android:layout_marginLeft="50dp"
-        android:layout_toRightOf="@+id/tvType" />
+        android:textColor="#660066"
+        android:text="all" />
+
+<!--     <Spinner -->
+<!--         android:id="@+id/spType" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignBottom="@+id/tvType" -->
+<!--         android:layout_marginLeft="50dp" -->
+<!--         android:layout_toRightOf="@+id/tvType" /> -->
 
     <TextView
         android:id="@+id/tvSize"
@@ -83,5 +92,15 @@
          android:layout_centerHorizontal="true"
          android:layout_marginTop="44dp"
          android:text="Search" />
+
+     <Button
+         android:id="@+id/btnType"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginLeft="50dp"
+         android:onClick="btnTypeClicked"
+         android:text="Add Type" />
    
 </RelativeLayout>

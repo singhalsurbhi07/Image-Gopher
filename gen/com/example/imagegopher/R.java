@@ -1307,7 +1307,9 @@ containing a value of this type.
         public static final int beginning=0x7f050023;
         public static final int bottom=0x7f050005;
         public static final int btnSearch=0x7f050055;
-        public static final int button1=0x7f050058;
+        public static final int btnSet=0x7f050058;
+        public static final int btnType=0x7f050056;
+        public static final int button1=0x7f05005b;
         public static final int center=0x7f05000c;
         public static final int center_horizontal=0x7f05000a;
         public static final int center_vertical=0x7f050008;
@@ -1319,7 +1321,7 @@ containing a value of this type.
         public static final int dialog=0x7f050020;
         public static final int disableHome=0x7f05001a;
         public static final int dropdown=0x7f050021;
-        public static final int editText1=0x7f050057;
+        public static final int editText1=0x7f05005a;
         public static final int edit_query=0x7f050041;
         public static final int end=0x7f050011;
         public static final int etUrl=0x7f050054;
@@ -1328,7 +1330,7 @@ containing a value of this type.
         public static final int fill=0x7f05000d;
         public static final int fill_horizontal=0x7f05000b;
         public static final int fill_vertical=0x7f050009;
-        public static final int gridView1=0x7f050059;
+        public static final int gridView1=0x7f05005c;
         public static final int home=0x7f050025;
         public static final int homeAsUp=0x7f050017;
         public static final int horizontal=0x7f050000;
@@ -1338,17 +1340,18 @@ containing a value of this type.
         public static final int left=0x7f050006;
         public static final int listMode=0x7f050013;
         public static final int list_item=0x7f05003a;
-        public static final int miAdvSettings=0x7f05005c;
-        public static final int miSearch=0x7f05005d;
+        public static final int miAdvSettings=0x7f05005f;
+        public static final int miSearch=0x7f050060;
         public static final int middle=0x7f050024;
         public static final int never=0x7f05001b;
         public static final int none=0x7f050022;
         public static final int normal=0x7f050012;
+        public static final int numberPicker1=0x7f050057;
         public static final int progress_circular=0x7f050029;
         public static final int progress_horizontal=0x7f05002a;
         public static final int radio=0x7f050040;
         public static final int right=0x7f050007;
-        public static final int searchView=0x7f05005b;
+        public static final int searchView=0x7f05005e;
         public static final int search_badge=0x7f050043;
         public static final int search_bar=0x7f050042;
         public static final int search_button=0x7f050044;
@@ -1363,12 +1366,11 @@ containing a value of this type.
         public static final int showCustom=0x7f050019;
         public static final int showHome=0x7f050016;
         public static final int showTitle=0x7f050018;
-        public static final int smartImageView=0x7f050056;
+        public static final int smartImageView=0x7f050059;
         public static final int spColor=0x7f050052;
         public static final int spSize=0x7f050050;
-        public static final int spType=0x7f05004e;
         public static final int split_action_bar=0x7f05002f;
-        public static final int srchString=0x7f05005a;
+        public static final int srchString=0x7f05005d;
         public static final int start=0x7f050010;
         public static final int submit_area=0x7f05004a;
         public static final int tabMode=0x7f050014;
@@ -1376,6 +1378,7 @@ containing a value of this type.
         public static final int top=0x7f050004;
         public static final int top_action_bar=0x7f050031;
         public static final int tvColor=0x7f050051;
+        public static final int tvSelectedType=0x7f05004e;
         public static final int tvSize=0x7f05004f;
         public static final int tvType=0x7f05004d;
         public static final int tvUrl=0x7f050053;
@@ -1435,11 +1438,12 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_advance_menu=0x7f030018;
-        public static final int activity_image_full_view=0x7f030019;
-        public static final int activity_image_showcase=0x7f03001a;
-        public static final int activity_main=0x7f03001b;
-        public static final int grid_element=0x7f03001c;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static final int activity_dialog=0x7f030019;
+        public static final int activity_image_full_view=0x7f03001a;
+        public static final int activity_image_showcase=0x7f03001b;
+        public static final int activity_main=0x7f03001c;
+        public static final int grid_element=0x7f03001d;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
