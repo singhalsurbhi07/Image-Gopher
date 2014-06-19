@@ -11,7 +11,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
         android:text="@string/type" />
      <TextView
         android:id="@+id/tvSelectedType"
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/tvType"
         android:layout_alignBottom="@+id/tvType"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="70dp"
         android:textColor="#660066"
         android:text="all" />
 
@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvType"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="15dp"
         android:layout_alignParentLeft="true"
         android:text="@string/size" />
@@ -46,6 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/tvSize"
         android:layout_marginLeft="50dp"
+        android:layout_below="@+id/tvSelectedType"
         android:layout_toRightOf="@+id/tvSize"/>
 
     <TextView
@@ -53,25 +54,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvSize"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="15dp"
         android:layout_alignParentLeft="true"
         android:text="@string/color" />
     
      <Spinner
-        android:id="@+id/spColor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/tvColor"
-        android:layout_marginLeft="50dp"
-        android:layout_toRightOf="@+id/tvColor" />
+         android:id="@+id/spColor"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/tvColor"
+         android:layout_alignLeft="@+id/etUrl"
+         android:layout_below="@+id/spSize" />
 
     <TextView
         android:id="@+id/tvUrl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvColor"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="15dp"
         android:layout_alignParentLeft="true"
         android:text="@string/url" />
@@ -82,6 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/tvUrl"
         android:layout_marginLeft="50dp"
+        android:layout_below="@+id/spColor"
         android:layout_toRightOf="@+id/tvUrl" />
 
      <Button
@@ -91,16 +93,16 @@
          android:layout_below="@+id/etUrl"
          android:layout_centerHorizontal="true"
          android:layout_marginTop="44dp"
-         android:text="Search" />
+         android:text="Done" />
 
-     <Button
+     <ImageView
          android:id="@+id/btnType"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_alignParentTop="true"
-         android:layout_alignParentRight="true"
-         android:layout_marginLeft="50dp"
+         android:layout_marginTop="16dp"
+         android:layout_toRightOf="@+id/btnSearch"
          android:onClick="btnTypeClicked"
-         android:text="Add Type" />
+         android:src="@drawable/ic_small_edit" />
    
 </RelativeLayout>

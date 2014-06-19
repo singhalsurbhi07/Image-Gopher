@@ -14,6 +14,7 @@ import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.NumberPicker;
 import android.widget.NumberPicker.OnValueChangeListener;
 import android.widget.Spinner;
@@ -24,13 +25,13 @@ public class AdvanceMenuActivity extends Activity {
 	private static List<String> imageColors = new ArrayList<String>();
 	private static List<String> imageSizes = new ArrayList<String>();
 	private static List<String> imageTypes = new ArrayList<String>();
-	Button spType;
+	ImageView spType;
 	Spinner spSize;
 	Spinner spColor;
 	EditText etUrl;
 	Button btnSearch;
 	TextView tvSelectedType;
-	String selectedType = "";
+	String selectedType = "all";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +59,7 @@ public class AdvanceMenuActivity extends Activity {
 	}
 
 	private void setViews() {
-		spType = (Button) findViewById(R.id.btnType);
+		spType = (ImageView) findViewById(R.id.btnType);
 		spSize = (Spinner) findViewById(R.id.spSize);
 		spColor = (Spinner) findViewById(R.id.spColor);
 		etUrl = (EditText) findViewById(R.id.etUrl);
@@ -121,7 +122,7 @@ public class AdvanceMenuActivity extends Activity {
 		d.setTitle("Select the Type");
 		d.setContentView(R.layout.activity_dialog);
 		Button b1 = (Button) d.findViewById(R.id.btnSet);
-		// Button b2 = (Button) d.findViewById(R.id.button2);
+		Button b2 = (Button) d.findViewById(R.id.btnCancel);
 		final NumberPicker np = (NumberPicker) d
 				.findViewById(R.id.numberPicker1);
 		np.setMaxValue(4);
@@ -147,6 +148,15 @@ public class AdvanceMenuActivity extends Activity {
 				// tv.setText(String.valueOf(np.getValue()));
 				d.dismiss();
 				tvSelectedType.setText(selectedType);
+			}
+		});
+		b2.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// selectedType = "all";
+				tvSelectedType.setText(selectedType);
+				d.dismiss();
+				// tvSelectedType.setText(selectedType);
 			}
 		});
 
