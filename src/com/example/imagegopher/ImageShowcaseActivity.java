@@ -14,6 +14,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableString;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -65,6 +67,13 @@ public class ImageShowcaseActivity extends Activity {
 		if (query.length() < 1) {
 			query = "Recent Trends";
 		}
+
+		// Update the action bar title with the TypefaceSpan instance
+		android.app.ActionBar actionBar = getActionBar();
+		SpannableString s = new SpannableString("Show Case");
+		s.setSpan(new TypefaceSpan(this, "Choco.otf"), 0, s.length(),
+				Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+		actionBar.setTitle(s);
 		getImages(BASE_URL, requestParams(query, 0));
 		gridView = (GridView) findViewById(R.id.gridView1);
 		setUpGridView();

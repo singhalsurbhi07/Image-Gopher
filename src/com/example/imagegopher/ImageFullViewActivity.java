@@ -12,6 +12,8 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.text.Spannable;
+import android.text.SpannableString;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -24,6 +26,11 @@ public class ImageFullViewActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_image_full_view);
+		SpannableString s = new SpannableString("Gallery");
+		s.setSpan(new TypefaceSpan(this, "Choco.otf"), 0, s.length(),
+				Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+		android.app.ActionBar actionBar = getActionBar();
+		actionBar.setTitle(s);
 		Intent i = getIntent();
 		String imageUrl = i.getStringExtra(ImageShowcaseActivity.IMAGE_URL_KEY);
 		SmartImageView imageView = (SmartImageView) findViewById(R.id.smartImageView);

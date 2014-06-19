@@ -8,6 +8,8 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableString;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -37,6 +39,12 @@ public class AdvanceMenuActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_advance_menu);
+		SpannableString s = new SpannableString("Advance Settings");
+
+		s.setSpan(new TypefaceSpan(this, "Choco.otf"), 0, s.length(),
+				Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+		android.app.ActionBar actionBar = getActionBar();
+		actionBar.setTitle(s);
 		addResources();
 		setViews();
 		ArrayAdapter<String> typeAdapter = new ArrayAdapter<String>(this,

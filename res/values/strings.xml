@@ -4,7 +4,7 @@
     <string name="app_name">Image Gopher</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_image_showcase">ImageShowcaseActivity</string>
+    <string name="title_activity_image_showcase">Show Case</string>
     <string name="title_activity_image_full_view">Gallery</string>
     <string name="type">Image Type</string>
     <string name="size">Image Size</string>
@@ -13,6 +13,6 @@
 
     <color name="pink">#FF99CC</color>
 
-    <string name="title_activity_advance_menu">Advance Menu</string>
+    <string name="title_activity_advance_menu">Advance Settings</string>
 
 </resources>
