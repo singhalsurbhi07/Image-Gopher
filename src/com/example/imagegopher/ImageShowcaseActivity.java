@@ -62,6 +62,9 @@ public class ImageShowcaseActivity extends Activity {
 		setContentView(R.layout.activity_image_showcase);
 		Intent i = getIntent();
 		query = i.getStringExtra(SEARCH_KEY);
+		if (query.length() < 1) {
+			query = "Recent Trends";
+		}
 		getImages(BASE_URL, requestParams(query, 0));
 		gridView = (GridView) findViewById(R.id.gridView1);
 		setUpGridView();
@@ -169,6 +172,15 @@ public class ImageShowcaseActivity extends Activity {
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		// Check which request we're responding to
+		if (query == null) {
+			Log.d("query", "null");
+		}
+		if (data == null) {
+			Log.d("data", "null");
+
+		} else {
+			Log.d("nothing null", "correct");
+		}
 		if (requestCode == SETTINGS_REQ_CODE) {
 			// Make sure the request was successful
 			if (resultCode == RESULT_OK) {

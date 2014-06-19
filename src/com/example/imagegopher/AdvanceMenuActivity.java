@@ -100,13 +100,13 @@ public class AdvanceMenuActivity extends Activity {
 				// "\nSpinner 1 : "+ String.valueOf(spType.getSelectedItem()) +
 				// "\nSpinner 2 : "+ String.valueOf(spSize.getSelectedItem()),
 				// Toast.LENGTH_SHORT).show();
-				// UserImageSettings userSettings = new
-				// UserImageSettings(spType.getSelectedItem().toString(),
-				// spSize.getSelectedItem().toString(),
-				// spColor.getSelectedItem().toString(),
-				// etUrl.getText().toString());
+				UserImageSettings userSettings = new UserImageSettings(
+						selectedType, spSize.getSelectedItem().toString(),
+						spColor.getSelectedItem().toString(), etUrl.getText()
+								.toString());
 				Intent returnIntent = new Intent();
-				// returnIntent.putExtra(ImageShowcaseActivity.ADV_SETTINGS_KEY,userSettings);
+				returnIntent.putExtra(ImageShowcaseActivity.ADV_SETTINGS_KEY,
+						userSettings);
 				setResult(RESULT_OK, returnIntent);
 				finish();
 			}

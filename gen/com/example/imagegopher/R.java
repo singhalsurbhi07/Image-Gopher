@@ -1324,7 +1324,6 @@ containing a value of this type.
         public static final int dialog=0x7f050020;
         public static final int disableHome=0x7f05001a;
         public static final int dropdown=0x7f050021;
-        public static final int editText1=0x7f05005b;
         public static final int edit_query=0x7f050041;
         public static final int end=0x7f050011;
         public static final int etUrl=0x7f050053;
@@ -1333,7 +1332,7 @@ containing a value of this type.
         public static final int fill=0x7f05000d;
         public static final int fill_horizontal=0x7f05000b;
         public static final int fill_vertical=0x7f050009;
-        public static final int gridView1=0x7f05005d;
+        public static final int gridView1=0x7f05005b;
         public static final int home=0x7f050025;
         public static final int homeAsUp=0x7f050017;
         public static final int horizontal=0x7f050000;
@@ -1343,8 +1342,8 @@ containing a value of this type.
         public static final int left=0x7f050006;
         public static final int listMode=0x7f050013;
         public static final int list_item=0x7f05003a;
-        public static final int miAdvSettings=0x7f050060;
-        public static final int miSearch=0x7f050061;
+        public static final int miAdvSettings=0x7f05005f;
+        public static final int miSearch=0x7f050060;
         public static final int middle=0x7f050024;
         public static final int never=0x7f05001b;
         public static final int none=0x7f050022;
@@ -1354,7 +1353,7 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f05002a;
         public static final int radio=0x7f050040;
         public static final int right=0x7f050007;
-        public static final int searchView=0x7f05005f;
+        public static final int searchView=0x7f05005e;
         public static final int search_badge=0x7f050043;
         public static final int search_bar=0x7f050042;
         public static final int search_button=0x7f050044;
@@ -1373,7 +1372,7 @@ containing a value of this type.
         public static final int spColor=0x7f050052;
         public static final int spSize=0x7f050050;
         public static final int split_action_bar=0x7f05002f;
-        public static final int srchString=0x7f05005e;
+        public static final int srchString=0x7f05005d;
         public static final int start=0x7f050010;
         public static final int submit_area=0x7f05004a;
         public static final int tabMode=0x7f050014;

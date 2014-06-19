@@ -289,7 +289,6 @@ int id default_activity_button 0x7f050039
 int id dialog 0x7f050020
 int id disableHome 0x7f05001a
 int id dropdown 0x7f050021
-int id editText1 0x7f05005b
 int id edit_query 0x7f050041
 int id end 0x7f050011
 int id etUrl 0x7f050053
@@ -298,7 +297,7 @@ int id expanded_menu 0x7f05003d
 int id fill 0x7f05000d
 int id fill_horizontal 0x7f05000b
 int id fill_vertical 0x7f050009
-int id gridView1 0x7f05005d
+int id gridView1 0x7f05005b
 int id home 0x7f050025
 int id homeAsUp 0x7f050017
 int id horizontal 0x7f050000
@@ -308,8 +307,8 @@ int id image 0x7f050038
 int id left 0x7f050006
 int id listMode 0x7f050013
 int id list_item 0x7f05003a
-int id miAdvSettings 0x7f050060
-int id miSearch 0x7f050061
+int id miAdvSettings 0x7f05005f
+int id miSearch 0x7f050060
 int id middle 0x7f050024
 int id never 0x7f05001b
 int id none 0x7f050022
@@ -319,7 +318,7 @@ int id progress_circular 0x7f050029
 int id progress_horizontal 0x7f05002a
 int id radio 0x7f050040
 int id right 0x7f050007
-int id searchView 0x7f05005f
+int id searchView 0x7f05005e
 int id search_badge 0x7f050043
 int id search_bar 0x7f050042
 int id search_button 0x7f050044
@@ -338,7 +337,7 @@ int id smartImageView 0x7f05005a
 int id spColor 0x7f050052
 int id spSize 0x7f050050
 int id split_action_bar 0x7f05002f
-int id srchString 0x7f05005e
+int id srchString 0x7f05005d
 int id start 0x7f050010
 int id submit_area 0x7f05004a
 int id tabMode 0x7f050014
